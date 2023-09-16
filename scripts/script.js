@@ -8,15 +8,15 @@ if (!hasRedirected) {
 
     if (lang === 'es') {
         // Redirect to the Spanish version if the user's language is Spanish
-        document.querySelectorAll('.english').forEach(elem => elem.style.display = 'none');
+        
         window.location.href = spanishURL;
     } else if (lang === 'en') {
         // Redirect to the English version if the user's language is English
-        document.querySelectorAll('.spanish').forEach(elem => elem.style.display = 'none');
+        
         window.location.href = englishURL;
     } else {
         // Handle other languages or provide a default language here
-        document.querySelectorAll('.spanish').forEach(elem => elem.style.display = 'none');
+        
         window.location.href = englishURL;
     }
   // Set the redirection flag in session storage to prevent further redirection
@@ -87,10 +87,7 @@ hamburger.addEventListener('click', () => {
                 showSlide(0);     
               }
 
-
-
 const currentPageURL = window.location.href;
-
 
 if (currentPageURL.includes("services.html")) {
  

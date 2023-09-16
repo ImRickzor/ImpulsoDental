@@ -86,29 +86,7 @@ hamburger.addEventListener('click', () => {
                 setInterval(nextSlide, 5000);
                 showSlide(0);     
               }
-/*
-  // Function to change the image source based on screen width
-  function changeImageSource() {
-    // Check if the current page is 'index.html'
-    if (window.location.pathname.endsWith('index.html')) {
-      const screenWidth = window.innerWidth;
 
-      // Get the image element
-      const image = document.querySelector('.img-changer');
-
-      // Check the screen width and set the image source accordingly
-      if (screenWidth <= 500) {
-        image.src = '../images/depa2.png'; // Set the mobile image source
-      } else {
-        image.src = '../images/airbnbwithlogo.png'; // Set the default image source
-      }
-    }
-  }
-
-  // Call the function when the page loads and on window resize
-  window.addEventListener('load', changeImageSource);
-  window.addEventListener('resize', changeImageSource);
-*/
 
 
 const currentPageURL = window.location.href;

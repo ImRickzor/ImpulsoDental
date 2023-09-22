@@ -17,48 +17,52 @@
     <header>
      
         <div class="address">
-          <img class="logoID" src="../images/logoID.png" alt="logoID" class="logo">
-          <img class="mobile-logo" src="../images/logo.png" alt="Logo" class="logo">
+          <img class="logoID mobile-logo" src="../images/logoID.png" alt="logoID">
+          <i class="logo mobile-logo">ImpulsoDental</i>
             <p><i class="far fa-clock"></i>Horario: Lunes a Domingo con cita previa</p>
             <p><i class="fas fa-map-marker-alt"></i> Trinidad Moran, Lince</p>
             <p><i class="fas fa-phone"></i> Contactanos: +51 955163208</p>
         </div>
+
         <div class="mobile-header">
-                    <!-- HTML for the hamburger button -->
           <button class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
           </button>
-          <!-- HTML for the slide-out menu -->
-          <div class="mobile-menu">
-            <ul>
-              <ul>
-                <li><a href="../español/index.html">Inicio</a></li>
-                <li><a href="../español/aboutus.html">Nosotros</a></li>
-                <li><a href="../español/services.html">Servicios</a></li>
-                <li><a href="../español/specialities.html">Especialidades</a></li>
-                <li><a href="../español/contact.html">Contactanos</a></li>
-                <li><a href="../español/faq.html">Preguntas</a></li>
-                <li><a href="../español/blog.html">Blog</a></li>
-                <li><a href="../español/airbnb.html">AirBnB</a></li>
-                <li><a  class="whatsapp" href="whatsapp://send?phone=+51955163208">Reserva tu cita</a></li>
-            </ul>
-            </ul>
-          </div>
 
-        </div> 
+         <div class="mobile-menu container-fluid text-center" style="display: none;">
+          <div class="row">
+
+          <div class="col-5 mobile-menu-ul-1">
+              <ul>
+                  <li><a href="../english/index.html">Inicio</a></li>
+                  <li><a href="../english/aboutus.html">Nosotros</a></li>
+                  <li><a href="../english/services.html">Servicios</a></li>
+                  <li><a href="../english/contact.html">Contactanos</a></li>
+              </ul>
+          </div>
+  
+          <div class="col-5 mobile-menu-ul-2">
+              <ul>
+                  <li><a href="../english/faq.html">Preguntas</a></li>
+                  <li><a href="../english/blog.html">Blog</a></li>
+                  <li><a href="../english/airbnb.html">AirBnB</a></li>
+                  <li><a class="whatsapp" href="whatsapp://send?phone=+51955163208">Reserva tu cita</a></li>
+              </ul>
+            </div>
+        </div>
+
 
         <nav>
           <ul>
-              <li><img class="logo" src="../images/logo.png" alt="Logo" class="logo"></li>
+              <img class="logoID" src="../images/logoID.png" alt="logoID">
+              <li class="logo">ImpulsoDental</li>
               <li><a href="../español/index.html">Inicio</a></li>
               <li><a href="../español/aboutus.html">Nosotros</a></li>
               <li><a href="../español/services.html">Servicios</a></li>
-              <li><a href="../español/specialities.html">Especialidades</a></li>
               <li><a href="../español/contact.html">Contactanos</a></li>
               <li><a href="../español/faq.html">Preguntas</a></li>
-              <li><a href="../español/blog.html">Blog</a></li>
               <li><a href="../español/airbnb.html">AirBnB</a></li>
               <li><a  class="whatsapp" href="whatsapp://send?phone=+51955163208">Reserva tu cita</a></li>
           </ul>
@@ -72,7 +76,7 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
-          <div class="carousel-inner">
+          <div class="carousel-inner carousel-content">
             <div class="carousel-item active">
               <img src="../images/nuestratencion.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-md-block">
@@ -85,11 +89,11 @@
               <div class="carousel-caption d-md-block">
                 <h5>Especialidades</h5>
                 <p>Contamos con diferentes especialidades para brindarte soluciones de calidad.</p>
-                <a class="btn btn-primary" href="../español/specialities.html">Leer mas</a>
+                <a class="btn btn-primary" href="../español/services.html">Leer mas</a>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="../images/airbnbwithlogo.PNG" class="d-block w-100 carousel-img" alt="...">
+              <img src="../images/airbnbwithlogo.png" class="d-block w-100 carousel-img" alt="...">
               <div class="carousel-caption d-md-block">
                 <h5>Nuestros AirBnB</h5>
                 <p>Contamos con dos ubicaciones estrategicas para que te hospedes durante tu estadia y estes cerca a nuestro consultorio.</p>
@@ -116,6 +120,220 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+
+        <div id="secondCarousel" class="carousel slide" data-bs-ride="carousel">
+          <h1 class="carousel-title">Nuestros servicios</h1>
+          <div class="carousel-inner second-carousel">
+            
+            <div class="carousel-item active">
+              <div class="row cards-section d-flex justify-content-center">
+                <!-- Card 1 Content -->
+                 <!-- Card 1 -->
+          <div class="col-md-3">
+            <div class="card cardo">
+                <img src="../images/general.jpg" class="card-img-top" alt="Card Image 1">
+                <div class="card-body">
+                    <h5 class="card-title">Odontología General</h5>
+                    <p class="card-text">Ofrecemos un enfoque integral para la salud bucal, desde exámenes de rutina hasta tratamientos para mantener una sonrisa impecable. Nuestro equipo de expertos se dedica a garantizar su bienestar dental a largo plazo.</p>
+                    <a href="../english/services.html" class="btn btn-primary">Leer mas</a>
+                </div>
+            </div>
+        </div>
+                <!-- Card 2 Content -->
+                 <!-- Card 2 -->
+          <div class="col-md-3">
+            <div class="card cardo">
+                <img src="../images/radiografia2.jpg" class="card-img-top" alt="Card Image 2">
+                <div class="card-body">
+                    <h5 class="card-title">Radiologia</h5>
+                    <p class="card-text">Utilizamos tecnología avanzada de imágenes para evaluar con precisión la salud de sus dientes y huesos. Nuestras radiografías permiten diagnósticos tempranos y un plan de tratamiento personalizado.</p>
+                    <a href="../english/services.html" class="btn btn-primary">Leer mas</a>
+                </div>
+            </div>
+        </div>
+                <!-- Card 3 Content -->
+                 <!-- Card 3 -->
+          <div class="col-md-3">
+            <div class="card cardo">
+                <img src="../images/blanqueamiento.png" class="card-img-top" alt="Card Image 3">
+                <div class="card-body">
+                    <h5 class="card-title">Blanqueamiento</h5>
+                    <p class="card-text">Transforme su sonrisa con nuestro tratamiento de blanqueamiento dental de vanguardia. Le ayudamos a lograr dientes más blancos y radiantes de manera segura y efectiva, resaltando su belleza natural.</p>
+                    <a href="../english/services.html" class="btn btn-primary">Leer mas</a>
+                </div>
+            </div>
+        </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row cards-section d-flex justify-content-center">
+                <!-- Card 4 Content -->
+                            <!-- Card 4 -->
+          <div class="col-md-3">
+            <div class="card cardo">
+                <img src="../images/ortodoncia.jpg" class="card-img-top" alt="Card Image 4">
+                <div class="card-body">
+                    <h5 class="card-title">Ortodoncia</h5>
+                    <p class="card-text">Para aquellos que buscan la alineación perfecta de sus dientes, ofrecemos soluciones de ortodoncia estética. Corregimos la posición de sus dientes de manera discreta y elegante, brindándole una sonrisa espectacular.</p>
+                    <a href="../english/services.html" class="btn btn-primary">Leer mas</a>
+                </div>
+            </div>
+        </div>
+                <!-- Card 5 Content -->
+                  <!-- Card 5 -->
+              <div class="col-md-3">
+                <div class="card cardo">
+                    <img src="../images/RehabilitacionOral.png" class="card-img-top" alt="Card Image 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Rehabilitacion oral</h5>
+                        <p class="card-text">Es un enfoque integral que busca restaurar la función y la estética de la boca. Incluye tratamientos como la colocación de coronas, puentes y prótesis para mejorar la salud bucal y restaurar la sonrisa de los pacientes.</p>
+                        <a href="../english/services.html" class="btn btn-primary">Leer mas</a>
+                    </div>
+                </div>
+            </div>
+                <!-- Card 6 Content -->
+                                <!-- Card 6 -->
+              <div class="col-md-3">
+                <div class="card cardo">
+                    <img src="../images/Implantologia.png" class="card-img-top" alt="Card Image 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Implantologia</h5>
+                        <p class="card-text">Se centra en la colocación de implantes dentales, que son estructuras de titanio diseñadas para reemplazar dientes faltantes. Este servicio ofrece soluciones permanentes y estables para restaurar la funcionalidad y la estética de la boca.</p>
+                        <a href="../english/services.html" class="btn btn-primary">Leer mas</a>
+                    </div>
+                </div>
+            </div>
+              </div>
+            </div>
+            <!-- Add more carousel items as needed -->
+            <div class="carousel-item">
+              <div class="row cards-section d-flex justify-content-center">
+                <!-- Card 7 Content -->
+                 <!-- Card 7 -->
+              <div class="col-md-3">
+                <div class="card cardo">
+                    <img src="../images/Endodoncia.png" class="card-img-top" alt="Card Image 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Endodoncia</h5>
+                        <p class="card-text">Se enfoca en el tratamiento de las enfermedades y lesiones de la pulpa dental (el tejido interno del diente). Este servicio incluye tratamientos de conducto para salvar dientes que de otro modo se perderían.</p>
+                        <a href="../english/services.html" class="btn btn-primary">Leer mas</a>
+                    </div>
+                </div>
+            </div>
+                <!-- Card 8 Content -->
+                 <!-- Card 8 -->
+              <div class="col-md-3">
+                <div class="card cardo">
+                    <img src="../images/CirugiaDental.png" class="card-img-top" alt="Card Image 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Cirugia dental</h5>
+                        <p class="card-text">Aborda una variedad de procedimientos quirúrgicos en la boca, como extracciones de muelas del juicio, cirugía de implantes dentales y corrección de problemas periodontales. Proporciona soluciones efectivas para diversos problemas dentales.</p>
+                        <a href="../english/services.html" class="btn btn-primary">Leer mas</a>
+                    </div>
+                </div>
+            </div>
+                <!-- Card 9 Content -->
+                 <!-- Card 9 -->
+               <div class="col-md-3">
+                <div class="card cardo">
+                    <img src="../images/RestauradorayEstetica.png" class="card-img-top" alt="Card Image 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Restauradora y estetica</h5>
+                        <p class="card-text">Se centra en la mejora de la apariencia de los dientes y la sonrisa. Incluye servicios como blanqueamiento dental, carillas y restauraciones dentales para lograr una sonrisa más hermosa y saludable.</p>
+                        <a href="../english/services.html" class="btn btn-primary">Leer mas</a>
+                    </div>
+                </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Controls (Previous and Next buttons) -->
+          <a class="carousel-control-prev" href="#secondCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#secondCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+        
+        <section class="container my-5">
+          <div class="row index-aboutus">
+              <!-- First Column (col-sm-6) - About Us -->
+              <div class="col-sm-6">
+                <h2>Descubre los Beneficios del Turismo Dental con Nosotros</h2>
+                <p>Embarcarse en un viaje de turismo dental con ImpulsoDental ofrece una serie de ventajas destacadas. Nuestra combinación única de servicios dentales de primera categoría y cómodos alojamientos de Airbnb garantiza una experiencia dental sin igual.</p>
+                <ul>
+                    <li>Ahorro de Costos</li>
+                    <li>Atención Dental de Clase Mundial</li>
+                    <li>Alojamientos Cómodos</li>
+                    <li>Oportunidades Turísticas</li>
+                    <li>Experiencia Simplificada</li>
+                    <li>Confianza Reforzada</li>
+                </ul>
+            </div>
+            
+      
+              <!-- Second Column (col-sm-6) - Carousel -->
+              <div class="col-sm-6 index-about-us-carousel">
+                  <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                          <div class="carousel-item active d-flex justify-content-center" data-bs-interval="10000">
+                              <img src="../images/DrPaolo.png" class="d-block w-100" alt="Image 1">
+                          </div>
+                          <div class="carousel-item">
+                              <img src=../images/revision.jpg class="d-block w-100" alt="Image 2">
+                          </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      <section class="container my-5 reviews">
+        <h1 class="text-center">Reseñas de nuestros clientes</h1>
+        <div class="row">
+            <!-- Review 1 -->
+            <div class="col-sm-4">
+                <div class="text-center">
+                    <img src="../images/smile1.png" alt="Client 1" class="img-thumbnail">
+                    <h5>John Doe</h5>
+                    <p>Atención de primera. No puedo agradecer lo suficiente a ImpulsoDental por su fantástico tratamiento de blanqueamiento dental. Mis dientes estaban notablemente más blancos después de una sola sesión, y los resultados perduraron. La atención del personal al detalle y el compromiso con la seguridad me hicieron sentir seguro para sonreír más a menudo. ¡Altamente recomendado!</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Review 2 -->
+            <div class="col-sm-4">
+                <div class="text-center">
+                    <img src="../images/smile2.png" alt="Client 2" class="img-thumbnail">
+                    <h5>Jane Smith</h5>
+                    <p>Servicio excepcional. Tuve el placer de visitar ImpulsoDental para un procedimiento de implante dental y estoy encantada con los resultados. El personal es amable y profesional, y el proceso del implante fue sin problemas. Ahora tengo una sonrisa hermosa y natural, y estoy agradecida con todo el equipo de ImpulsoDental por su experiencia y cuidado.</p>
+                </div>
+            </div>
+            
+            <!-- Review 3 -->
+            <div class="col-sm-4">
+                <div class="text-center">
+                    <img src="../images/smile3.png" alt="Client 3" class="img-thumbnail">
+                    <h5>Mary Johnson</h5>
+                    <p>Atención excepcional. Mi tratamiento de ortodoncia en ImpulsoDental fue una excelente experiencia. El equipo experto y cuidadoso garantizó mi comodidad durante todo el proceso. ¡Estoy encantado con los resultados! Gracias, ImpulsoDental.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+  
 
    <footer>
     <div class="copyright">

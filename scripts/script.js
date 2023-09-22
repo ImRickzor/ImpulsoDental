@@ -139,7 +139,43 @@ if (currentPageURL.includes("services.html")) {
             listItems[1].textContent = 'Equipo dental experimentado';
             listItems[2].textContent = 'Cómodo y sin dolor';
             listItems[3].textContent = 'Orientación posterior a la extracción';
-          }
+          } else if (linkText === 'Rehabilitación Oral') {
+            orthodonticsDiv.querySelector('h2').textContent = 'Rehabilitación Oral';
+            orthodonticsDiv.querySelector('p').textContent =
+                'Se trata de un enfoque integral que busca restaurar la función y la estética de la boca. Incluye tratamientos como la colocación de coronas, puentes y prótesis para mejorar la salud oral y restaurar la sonrisa de los pacientes.';
+            const listItems = orthodonticsDiv.querySelectorAll('li');
+            listItems[0].textContent = 'Restauración oral';
+            listItems[1].textContent = 'Prótesis dentales';
+            listItems[2].textContent = 'Mejoras estéticas';
+            listItems[3].textContent = 'Salud oral óptima';
+        } else if (linkText === 'Endodoncia') {
+            orthodonticsDiv.querySelector('h2').textContent = 'Endodoncia';
+            orthodonticsDiv.querySelector('p').textContent =
+                'Se enfoca en el tratamiento de enfermedades y lesiones de la pulpa dental (el tejido interno del diente). Este servicio incluye tratamientos de conducto para salvar los dientes que de lo contrario se perderían.';
+            const listItems = orthodonticsDiv.querySelectorAll('li');
+            listItems[0].textContent = 'Tratamientos de conducto';
+            listItems[1].textContent = 'Especialistas en endodoncia';
+            listItems[2].textContent = 'Alivio del dolor';
+            listItems[3].textContent = 'Preservación dental';
+        } else if (linkText === 'Cirugía Dental') {
+            orthodonticsDiv.querySelector('h2').textContent = 'Cirugía Dental';
+            orthodonticsDiv.querySelector('p').textContent =
+                'Aborda una variedad de procedimientos quirúrgicos en la boca, como extracciones de muelas del juicio, cirugía de implantes dentales y corrección de problemas periodontales. Ofrece soluciones efectivas para varios problemas dentales.';
+            const listItems = orthodonticsDiv.querySelectorAll('li');
+            listItems[0].textContent = 'Extracciones dentales';
+            listItems[1].textContent = 'Cirugía de implantes dentales';
+            listItems[2].textContent = 'Tratamientos periodontales';
+            listItems[3].textContent = 'Cuidado postoperatorio';
+        } else if (linkText === 'Restauradora y Estética') {
+            orthodonticsDiv.querySelector('h2').textContent = 'Restauradora y Estética';
+            orthodonticsDiv.querySelector('p').textContent =
+                'Se enfoca en mejorar la apariencia de los dientes y la sonrisa. Incluye servicios como el blanqueamiento dental, carillas dentales y restauraciones dentales para lograr una sonrisa más hermosa y saludable.';
+            const listItems = orthodonticsDiv.querySelectorAll('li');
+            listItems[0].textContent = 'Blanqueamiento dental';
+            listItems[1].textContent = 'Carillas dentales';
+            listItems[2].textContent = 'Restauraciones dentales';
+            listItems[3].textContent = 'Estética dental mejorada';
+        }
           
     } else {
         if (linkText === 'Orthodontics') {
@@ -178,9 +214,71 @@ if (currentPageURL.includes("services.html")) {
             listItems[1].textContent = 'Experienced dental team';
             listItems[2].textContent = 'Comfortable and painless';
             listItems[3].textContent = 'Post-extraction care guidance';
-          }
+          } else if (linkText === 'Oral rehabilitation') {
+            orthodonticsDiv.querySelector('h2').textContent = 'Oral Rehabilitation';
+            orthodonticsDiv.querySelector('p').textContent =
+                'It is a comprehensive approach that seeks to restore the function and aesthetics of the mouth. It includes treatments such as the placement of crowns, bridges, and prostheses to improve oral health and restore the smile of patients.';
+            const listItems = orthodonticsDiv.querySelectorAll('li');
+            listItems[0].textContent = 'Oral restoration';
+            listItems[1].textContent = 'Dental prostheses';
+            listItems[2].textContent = 'Aesthetic improvements';
+            listItems[3].textContent = 'Optimal oral health';
+        } else if (linkText === 'Endodontics') {
+            orthodonticsDiv.querySelector('h2').textContent = 'Endodontics';
+            orthodonticsDiv.querySelector('p').textContent =
+                'It focuses on the treatment of diseases and injuries of the dental pulp (the internal tissue of the tooth). This service includes root canal treatments to save teeth that would otherwise be lost.';
+            const listItems = orthodonticsDiv.querySelectorAll('li');
+            listItems[0].textContent = 'Root canal treatments';
+            listItems[1].textContent = 'Endodontic specialists';
+            listItems[2].textContent = 'Pain relief';
+            listItems[3].textContent = 'Dental preservation';
+        } else if (linkText === 'Dental surgery') {
+            orthodonticsDiv.querySelector('h2').textContent = 'Dental Surgery';
+            orthodonticsDiv.querySelector('p').textContent =
+                'It addresses a variety of surgical procedures in the mouth, such as wisdom tooth extractions, dental implant surgery, and correction of periodontal problems. It provides effective solutions for various dental problems.';
+            const listItems = orthodonticsDiv.querySelectorAll('li');
+            listItems[0].textContent = 'Dental extractions';
+            listItems[1].textContent = 'Dental implant surgery';
+            listItems[2].textContent = 'Periodontal treatments';
+            listItems[3].textContent = 'Postoperative care';
+        } else if (linkText === 'Restorative and aesthetic') {
+            orthodonticsDiv.querySelector('h2').textContent = 'Restorative and Aesthetic';
+            orthodonticsDiv.querySelector('p').textContent =
+                'It focuses on improving the appearance of the teeth and smile. It includes services such as teeth whitening, dental veneers, and dental restorations to achieve a more beautiful and healthy smile.';
+            const listItems = orthodonticsDiv.querySelectorAll('li');
+            listItems[0].textContent = 'Teeth whitening';
+            listItems[1].textContent = 'Dental veneers';
+            listItems[2].textContent = 'Dental restorations';
+            listItems[3].textContent = 'Enhanced smile aesthetics';
+        }
     }
     
     });
   });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  var secondCarousel = new bootstrap.Carousel(document.querySelector('#secondCarousel'), {
+    interval: 4000, // Set the autoplay interval in milliseconds (e.g., 4000ms or 4 seconds)
+  });
+
+  // Adjust the number of cards displayed based on screen size
+  window.addEventListener('resize', function () {
+    var cardContainers = document.querySelectorAll('.carousel-item .row');
+
+    cardContainers.forEach(function (container) {
+      if (window.innerWidth < 576) {
+        // Mobile screens: Display 1 card per slide
+        container.classList.remove('col-md-4');
+        container.classList.add('col-12');
+      } else {
+        // Larger screens: Display 3 cards per slide
+        container.classList.remove('col-12');
+        container.classList.add('col-md-4');
+      }
+    });
+
+    // Refresh the carousel to apply changes
+    secondCarousel.refresh();
+  });
+});

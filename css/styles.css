@@ -76,6 +76,16 @@
 
     
     /*section del carousel */
+    .carousel{
+        height: 100%;
+        flex:auto;
+       }
+       .carousel-content{
+        height: 90vh;
+       }
+       .carousel-item{
+        height: 100%;
+       }
     .carousel-content img {
         margin-left: 0%;
         max-width: auto;
@@ -2591,7 +2601,7 @@
         margin-left: 0%;
         width:auto;
         height:100%;
-        object-fit: stretch;
+        object-fit: fill;
         object-position: center;
         min-height: 100%;
     }
@@ -2620,14 +2630,13 @@
     .second-carousel{
         margin-top: 2%;
         display: flex;
-        justify-content: space-between; 
         align-items: center;
         margin-bottom: 25%;
         min-height: 100%;
-        height: auto;
+        height: 100%;
         min-width: 100%;
         text-align: center;
-        margin-left: 17%;
+        position: relative;
     }
 
     .carousel-title{
@@ -2635,17 +2644,26 @@
         text-align: center;
         color: #1fc0ba;
     }
+    .cards-section {
+        display: flex;
+        flex-wrap: wrap; /* Wrap cards to the next line */
+        justify-content: center; /* Center cards horizontally */
+        align-items: center;
+        width: 100%;
+        margin-left: 15%;
+    }
     .card{
         border:none;
     }
     .cardo{
+        margin-bottom: 2vh;
         width:70%;
         background-color: rgba(31, 192, 186, 0.7);
         border-radius: 2rem;
         color: white;
         padding: 1.5rem;
         text-align: left;
-        height: 97%;
+        height: 100%;
         position: relative;
     }
     .cardo h5{
@@ -2665,11 +2683,10 @@
     .second-carousel .card-img-top {
         border-radius: 50%;
         width: 15vh;
-        height: auto;
-        
+        height: 13vh;
         display: block;
         margin: 0 auto;
-        margin-top:2rem;
+        margin-top:-1rem;
         
     }
     .card-body{
@@ -2677,12 +2694,14 @@
         position: relative;
     }
     .card-body a {
-        
         background-color: #115278; 
         margin-top:-1.5rem;
         position: absolute;
-        right: 0px;
-        
+        right: 0px; 
+    }
+    .second-carousel .card-body a{
+        position:relative;
+        margin-left: 20%;
     }
     .card-body a:hover{
         
@@ -2693,7 +2712,7 @@
         border-radius: 1rem;
     }
     .index-aboutus{
-        margin-top: 35%;
+        margin-top: 20%;
         background-color: rgba(31, 192, 186, 0.7);
         padding: 5%;
         border-radius: 15%;
@@ -2701,6 +2720,7 @@
         margin-left: 5%;
     }
     .index-aboutus h2, .index-aboutus p, .index-aboutus ul{
+        margin-left: 8%;
         width: 30vh;
         margin-top: 0%;
         color: #115278;
@@ -2712,15 +2732,15 @@
         min-height: 35vh;
         min-width: 30vh;
         border-radius: 10%;
-        margin-top: 1vh;
     }
     .index-aboutus img{
+        margin-left: 0;
         margin-top: 0vh;
         max-width: 30vh;
         max-height: 35vh;
         min-height: 35vh;
         min-width: 30vh;
-        border-radius: 5%;
+        border-radius: 10%;
     }
     .reviews{
         background-color: rgba(31, 192, 186, 0.7);
@@ -2749,14 +2769,12 @@
     }
     footer {
         font-family: 'Source Sans 3', serif;
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,82,120,100) 35%, rgba(31,192,186,100) 100%);
         color: #fff; 
         padding: 1.5rem 0; 
         display: inline-block;
         flex: 0 1 1%;
-        /*height: 5.1rem;*/
- 
     }
     footer a{
         width: 100px;
@@ -2764,6 +2782,8 @@
     }
     .copyright {
         flex: 1;
+        align-items: center;
+        justify-content: center;
         margin-left: 1.2rem;
     }
     .social-media {
@@ -2775,7 +2795,7 @@
     .RRSS{
         margin-top: -1.5rem;
        float:right;
-        max-width: 8%;
+        max-width: 9%;
     }
     
     /*SECTION ABOUT US*/
@@ -3062,7 +3082,7 @@
             margin-bottom: 2vh;
             position: relative;
             margin-left:5% ;
-            height: 54vh;
+            height: 57vh;
             
         }
         .img-fluid{

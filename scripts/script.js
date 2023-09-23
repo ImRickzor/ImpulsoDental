@@ -282,3 +282,31 @@ document.addEventListener('DOMContentLoaded', function () {
     secondCarousel.refresh();
   });
 });
+
+
+  // Function to change the image source of a specific element
+  function updateSpecificImage() {
+    const carouselItem1= document.querySelector('.carousel-content .carousel-item:nth-child(1)'); 
+    const imgElement1 = carouselItem1.querySelector('img');
+    const carouselItem2= document.querySelector('.carousel-content .carousel-item:nth-child(3)'); 
+    const imgElement2 = carouselItem2.querySelector('img');
+    const carouselItem3= document.querySelector('.index-about-us-carousel .carousel-item:nth-child(1)'); 
+    const imgElement3 = carouselItem3.querySelector('img');
+
+    // Check if the window width is 600 pixels or less
+    if (window.innerWidth <= 600) {
+      imgElement1.src = "../images/nuestraatencion2.jpg";
+      imgElement2.src = "../images/airbnb.png"; 
+      imgElement3.src = "../images/DrPaolo3.png"; 
+    } else {
+      imgElement1.src = "../images/nuestratencion.jpg"
+      imgElement2.src = "../images/airbnbwithlogo.png";
+      imgElement3.src = "../images/DrPaolo3.png";
+    }
+  }
+
+  // Attach the function to the window's resize event
+  window.addEventListener('resize', updateSpecificImage);
+  if (currentPageURL.includes("index.html")) {
+  updateSpecificImage();
+  }

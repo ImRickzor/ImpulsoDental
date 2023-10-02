@@ -297,11 +297,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (window.innerWidth <= 600) {
       imgElement1.src = "../images/nuestraatencion2.jpg";
       imgElement2.src = "../images/airbnb.png"; 
-      imgElement3.src = "../images/DrPaolo3.png"; 
+      imgElement3.src = "../images/cirugiadental2.png"; 
     } else {
       imgElement1.src = "../images/nuestratencion.jpg"
       imgElement2.src = "../images/airbnbwithlogo.png";
-      imgElement3.src = "../images/DrPaolo3.png";
+      imgElement3.src = "../images/cirugiadental2.png";
     }
   }
 

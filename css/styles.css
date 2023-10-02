@@ -77,11 +77,15 @@
     
     /*section del carousel */
     .carousel{
+        margin-top: 6%;;
         height: 100%;
         flex:auto;
        }
        .carousel-content{
-        height: 90vh;
+        border-radius: 5%;
+        width: 50%;
+        height: 65vh;
+        margin-left: 25%;
        }
        .carousel-item{
         height: 100%;
@@ -114,7 +118,6 @@
     }
     .second-carousel{
         margin-top: 2%;
-        
         display: flex;
         justify-content: space-between; 
         align-items: center;
@@ -133,7 +136,7 @@
     .cardo{
         background-color: rgba(31, 192, 186, 0.7);
         border-radius: 2rem;
-        color: white;
+        color:#115278;
         padding: 2rem;
         text-align: left;
         height: 100%;
@@ -185,9 +188,15 @@
         margin-top: 0%;
         color: #115278;
     }
+    .index-aboutus .carousel-item{
+        margin-left: 20%;
+        height:40vh;
+        width:40vh;
+    }
     .index-aboutus img{
-        max-height: 40vh;
-        width: auto;
+        margin-top: 5%;
+        max-height: 100%;
+        width: 100%;
         border-radius: 5%;
     }
     .reviews{
@@ -200,6 +209,7 @@
         color: #115278;
     }
     .reviews img{
+        display:none;
         border: none;
         margin-top: 5%;
         border-radius: 5%;
@@ -2592,7 +2602,11 @@
         flex:auto;
        }
        .carousel-content{
-        height: 70vh;
+        height: 60vh;
+        width:80%;
+        margin-left: 10%;
+        margin-top: 10%;
+        border-radius: 5vh;
        }
        .carousel-item{
         height: 100%;
@@ -2607,11 +2621,11 @@
     }
     .carousel-caption {
         font-family: 'Source Sans 3', serif;
-        color: white;
+        color:white;
         font-size: 0.7rem;
         border-radius: 4vh;
-        margin-left: 5%;
-        width: 60%;
+        margin-left: -15%;
+        width: 100%;
         height: 22vh;
         display:inline-block;
         background-color: rgba(31, 192, 186, 0.7);
@@ -2631,12 +2645,12 @@
         margin-top: 2%;
         display: flex;
         align-items: center;
-        margin-bottom: 25%;
-        min-height: 100%;
-        height: 100%;
+        min-height: 120%;
+        height: 120%;
         min-width: 100%;
         text-align: center;
         position: relative;
+        margin-bottom: 25%;
     }
 
     .carousel-title{
@@ -2651,6 +2665,7 @@
         align-items: center;
         width: 100%;
         margin-left: 15%;
+        height: 100%;
     }
     .card{
         border:none;
@@ -2660,7 +2675,7 @@
         width:70%;
         background-color: rgba(31, 192, 186, 0.7);
         border-radius: 2rem;
-        color: white;
+        color:#115278;
         padding: 1.5rem;
         text-align: left;
         height: 100%;
@@ -2712,7 +2727,7 @@
         border-radius: 1rem;
     }
     .index-aboutus{
-        margin-top: 20%;
+        margin-top: 50%;
         background-color: rgba(31, 192, 186, 0.7);
         padding: 5%;
         border-radius: 15%;
@@ -2753,6 +2768,7 @@
         color: #115278;
     }
     .reviews img{
+        display:none;
         border: none;
         margin-top: 5%;
         border-radius: 5%;

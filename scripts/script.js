@@ -310,3 +310,4 @@ document.addEventListener('DOMContentLoaded', function () {
   if (currentPageURL.includes("index.html")) {
   updateSpecificImage();
   }
+

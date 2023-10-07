@@ -77,7 +77,7 @@
     
     /*section del carousel */
     .carousel{
-        margin-top: 6%;;
+        margin-top: 2%;
         height: 100%;
         flex:auto;
        }
@@ -117,21 +117,23 @@
         border:none
     }
     .second-carousel{
-        margin-top: 2%;
+        margin-top: 0%;
         display: flex;
         justify-content: space-between; 
         align-items: center;
-        margin-bottom: 2%;
+        margin-bottom: 0%;
         min-height: 100%;
         max-height: 80vh;
+        height: 55vh;
     }
     .carousel-title{
         margin-top: 2rem;
+        margin-bottom: 2rem;
         text-align: center;
-        color: #1fc0ba;
+        color:#115278;
     }
     .card{
-        border:none;   
+        border:none; 
     }
     .cardo{
         background-color: rgba(31, 192, 186, 0.7);
@@ -141,9 +143,25 @@
         text-align: left;
         height: 100%;
         position: relative;
+        height: 55vh;
     }
     .cardo h5{
         text-align: center;
+    }
+    .third-cardo{
+        background-color: rgba(31, 192, 186, 0.7);
+        border-radius: 2rem;
+        color:#115278;
+        padding: 2rem;
+        text-align: left;
+        height: 40vh;
+        
+        position: relative;
+        margin-bottom: 10%;
+    }
+    .third-cardo h5{
+        text-align: center;
+        margin-top: -10%;
     }
     .card-header{
         background-color: #115278;
@@ -151,8 +169,8 @@
     }
     .card-img-top {
         border-radius: 50%;
-        width: 30vh;
-        height: 25vh;
+        width: 20vh;
+        height: 20vh;
         margin-top:5rem;
         display: block;
         margin: 0 auto;
@@ -182,19 +200,24 @@
         margin-top: 5%;
         background-color: rgba(31, 192, 186, 0.7);
         padding: 5%;
-        border-radius: 12%;
+        border-radius: 5%;
     }
     .index-aboutus h2, .index-aboutus p, .index-aboutus ul{
         margin-top: 0%;
         color: #115278;
     }
-    .index-aboutus .carousel-item{
-        margin-left: 20%;
-        height:40vh;
-        width:40vh;
+    .index-about-us-carousel{
+        margin-left:0%;
     }
+    .index-aboutus .carousel-item{
+        margin-top: 0%;
+        margin-left: 0%;
+        height:45vh;
+        width:45vh;
+        border-radius: 5%;
+    }
+
     .index-aboutus img{
-        margin-top: 5%;
         max-height: 100%;
         width: 100%;
         border-radius: 5%;
@@ -676,17 +699,30 @@
 
     
     /*section del carousel */
+    .carousel-content{
+        margin-top: 2%;
+        border-radius: 5%;
+        width: 60%;
+        height: 70vh;
+        margin-left: 20%;
+       }
+       .carousel-item{
+        height: 100%;
+       }
     .carousel-content img {
         margin-left: 0%;
-        max-width: 100%;
-        max-height: 75vh;
-        width:auto;
-        height: 67vh;
+        max-width: auto;
+        max-height: 65vh;
+        width:100%;
+        height: 65vh;
+        object-fit: stretch;
+        object-position: center;
+        min-height: 100%;
     }
     
     .carousel-caption {
         background-color: rgba(31, 192, 186, 0.7);
-        color: white;
+        color:white;
         padding: 1rem; 
     }
     .carousel-content .btn{
@@ -705,12 +741,12 @@
         align-items: center;
         margin-bottom: 2%;
         min-height: 100%;
-        max-height: 80vh;
+        max-height: 60vh;
     }
     .carousel-title{
         margin-top: 2rem;
         text-align: center;
-        color: #1fc0ba;
+        color:#115278;
     }
     .card{
         border:none;   
@@ -718,10 +754,10 @@
     .cardo{
         background-color: rgba(31, 192, 186, 0.7);
         border-radius: 2rem;
-        color: white;
+        color:#115278;
         padding: 2rem;
         text-align: left;
-        height: 100%;
+        height: 60vh;
         position: relative;
     }
     .cardo h5{
@@ -764,7 +800,7 @@
         margin-top: 5%;
         background-color: rgba(31, 192, 186, 0.7);
         padding: 5%;
-        border-radius: 12%;
+        border-radius: 5%;
     }
     .index-aboutus h2, .index-aboutus p, .index-aboutus ul{
         margin-top: 0%;
@@ -785,6 +821,7 @@
         color: #115278;
     }
     .reviews img{
+        display:none;
         border: none;
         margin-top: 5%;
         border-radius: 5%;
@@ -798,6 +835,21 @@
         background-color: #1fc0ba;
         padding: 0.5rem;
         border-radius: 0.5vh;
+    }
+    .third-cardo{
+        background-color: rgba(31, 192, 186, 0.7);
+        border-radius: 2rem;
+        color:#115278;
+        padding: 2rem;
+        text-align: left;
+        height: 50vh;
+        width: 23vh;
+        position: relative;
+        margin-bottom: 10%;
+    }
+    .third-cardo h5{
+        text-align: center;
+        margin-top: -10%;
     }
     body{
         margin: 0;
@@ -1262,12 +1314,25 @@
     
     
     /*section del carousel */
+    .carousel-content{
+        margin-top: 2%;
+        border-radius: 5%;
+        width: 70%;
+        height: 64vh;
+        margin-left: 15%;
+       }
+       .carousel-item{
+        height: 100%;
+       }
     .carousel-content img {
         margin-left: 0%;
-        max-width: 100%;
-        max-height: 66vh;
-        width:auto;
-        height: 66vh;
+        max-width: auto;
+        max-height: 64vh;
+        width:100%;
+        height: 64vh;
+        object-fit: stretch;
+        object-position: center;
+        min-height: 100%;
     }
     
     .carousel-caption {
@@ -1293,11 +1358,12 @@
         min-height: 100%;
         max-height: 80vh;
         min-width: 100%;
+        width: 100%;
     }
     .carousel-title{
         margin-top: 2rem;
         text-align: center;
-        color: #1fc0ba;
+        color:#115278;
     }
     .card{
         width: 112%;
@@ -1309,8 +1375,10 @@
         color: white;
         padding: 1.5rem;
         text-align: left;
-        height: 100%;
+        height:48vh;
         position: relative;
+        color: #115278;
+        width: 18vh;
     }
     .cardo h5{
         font-size: 1rem;
@@ -1356,7 +1424,7 @@
         margin-top: 5%;
         background-color: rgba(31, 192, 186, 0.7);
         padding: 5%;
-        border-radius: 15%;
+        border-radius: 5%;
     }
     .index-aboutus h2, .index-aboutus p, .index-aboutus ul{
         width: 30vh;
@@ -1389,11 +1457,12 @@
         color: #115278;
     }
     .reviews img{
+        display:none;
         border: none;
         margin-top: 5%;
         border-radius: 5%;
-        width: 25vh;
-        height: 25vh;
+        width: 35vh;
+        height: 35vh;
         max-height: 50%;
         margin-bottom: 5%;
         
@@ -1402,6 +1471,22 @@
         background-color: #1fc0ba;
         padding: 0.5rem;
         border-radius: 0.5vh;
+    }
+    .third-cardo{
+        background-color: rgba(31, 192, 186, 0.7);
+        border-radius: 2rem;
+        color:#115278;
+        padding: 2rem;
+        text-align: left;
+        height: 54vh;
+        width: 18vh;
+        position: relative;
+        margin-bottom: 10%;
+        font-size: 1.2vh;
+    }
+    .third-cardo h5{
+        text-align: center;
+        margin-top: -10%;
     }
 
     body{
@@ -1952,7 +2037,11 @@
         flex:auto;
        }
        .carousel-content{
-        height: 90vh;
+        height: 60vh;
+        width:80%;
+        margin-left: 10%;
+        margin-top: 10%;
+        border-radius: 5vh;
        }
        .carousel-item{
         height: 100%;
@@ -1961,11 +2050,10 @@
         margin-left: 0%;
         width:auto;
         height:100%;
-        object-fit: strech;
+        object-fit: fill;
         object-position: center;
         min-height: 100%;
     }
-
     .carousel-caption {
         font-family: 'Source Sans 3', serif;
         color: white;
@@ -1999,13 +2087,13 @@
         height: auto;
         min-width: 100%;
         text-align: center;
-       margin-left: 25%;
+       
     }
 
     .carousel-title{
         margin-top: 2rem;
         text-align: center;
-        color: #1fc0ba;
+        color:#115278;
     }
     .card{
         border:none;
@@ -2014,11 +2102,13 @@
         width: 50%;
         background-color: rgba(31, 192, 186, 0.7);
         border-radius: 2rem;
-        color: white;
+        color:#115278;
         padding: 1.5rem;
         text-align: left;
         height: 97%;
         position: relative;
+        margin-bottom: 1%;
+        margin-left: 25%;
     }
     .cardo h5{
         margin-top: -1rem;
@@ -2029,6 +2119,7 @@
     .cardo p{
         display:none ;
         font-size: 0.8rem;
+        color: #115278;
     }
     .card-header{
         background-color: #115278;
@@ -2036,12 +2127,12 @@
     }
     .second-carousel .card-img-top {
         border-radius: 50%;
-        width: 15vh;
-        height: auto;
+        width: 20vh;
+        height: 20vh;
         
         display: block;
         margin: 0 auto;
-        margin-top:2rem;
+        margin-top:0.5rem;
         
     }
     .card-body{
@@ -2049,11 +2140,10 @@
         position: relative;
     }
     .card-body a {
-        
         background-color: #115278; 
         margin-top:-1.5rem;
         position: absolute;
-        right: 0px;
+        right: 30%;
         
     }
     .card-body a:hover{
@@ -2116,7 +2206,21 @@
         padding: 0.5rem;
         border-radius: 0.5vh;
     }
-
+    .third-cardo{
+        margin-left: 25%;
+        background-color: rgba(31, 192, 186, 0.7);
+        border-radius: 2rem;
+        color:#115278;
+        padding: 2rem;
+        text-align: left;
+        height: 60vh;
+        width: 50vh;
+        position: relative;
+        margin-bottom: 10%;
+    }
+    .third-cardo h5{
+        text-align: center;
+    }
 
     footer {
         font-family: 'Source Sans 3', serif;
@@ -2458,7 +2562,7 @@
         font-size: 1rem;
     }
     .english{
-        height: 100vh;
+        height: 100%;
         display:flex;
         flex-direction: column;
         justify-content: space-between;
@@ -2645,18 +2749,18 @@
         margin-top: 2%;
         display: flex;
         align-items: center;
-        min-height: 120%;
-        height: 120%;
+        min-height: 100%;
+        height: 100%;
         min-width: 100%;
         text-align: center;
         position: relative;
-        margin-bottom: 25%;
+        margin-bottom: 0%;
     }
 
     .carousel-title{
         margin-top: 2rem;
         text-align: center;
-        color: #1fc0ba;
+        color:#115278;
     }
     .cards-section {
         display: flex;
@@ -2678,12 +2782,12 @@
         color:#115278;
         padding: 1.5rem;
         text-align: left;
-        height: 100%;
+        height: 32vh;
         position: relative;
     }
     .cardo h5{
         margin-top: -1rem;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-align: center;
         margin-bottom: 2rem;
     }
@@ -2701,7 +2805,7 @@
         height: 13vh;
         display: block;
         margin: 0 auto;
-        margin-top:-1rem;
+        margin-top:0vh;
         
     }
     .card-body{
@@ -2710,7 +2814,7 @@
     }
     .card-body a {
         background-color: #115278; 
-        margin-top:-1.5rem;
+        margin-top:-3rem;
         position: absolute;
         right: 0px; 
     }
@@ -2727,10 +2831,10 @@
         border-radius: 1rem;
     }
     .index-aboutus{
-        margin-top: 50%;
+        margin-top:2%;
         background-color: rgba(31, 192, 186, 0.7);
         padding: 5%;
-        border-radius: 15%;
+        border-radius: 1%;
         width: 90%;
         margin-left: 5%;
     }
@@ -2740,8 +2844,11 @@
         margin-top: 0%;
         color: #115278;
     }
-    .index-aboutus .cont-img{
+    .index-about-us-carousel{
         margin-left: 5%;
+    }
+    .index-aboutus .cont-img{
+        margin-left: 0%;
         max-width: 30vh;
         max-height: 35vh;
         min-height: 35vh;
@@ -2761,7 +2868,11 @@
         background-color: rgba(31, 192, 186, 0.7);
         padding: 2rem;
         border-radius: 15%;
-        width: 90%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
     
     .reviews h1,.reviews h5, .reviews p{
@@ -2782,6 +2893,23 @@
         background-color: #1fc0ba;
         padding: 0.5rem;
         border-radius: 0.5vh;
+    } 
+    .third-cardo{
+        background-color: rgba(31, 192, 186, 0.7);
+        border-radius: 2rem;
+        color:#115278;
+        padding: 2rem;
+        text-align: left;
+        height: 70vh;
+        width: 40vh;
+        position: relative;
+        margin-bottom: 10%;
+        margin-left: -7%;
+        
+    }
+    .third-cardo h5{
+        text-align: center;
+        margin-top: -10%;
     }
     footer {
         font-family: 'Source Sans 3', serif;
@@ -3240,14 +3368,17 @@
     }
        /*section del carousel */
        .carousel{
-        height: auto;
+        height: 90vh;
+       }
+       .carousel-content{
+        height: 90vh;
        }
        .carousel-content img {
         margin-left: 0%;
         max-width: 100%;
-        max-height: 80vh;
+        max-height: 90vh;
         width:auto;
-        height:80vh;
+        height:90vh;
     }
     .carousel-caption {
         
@@ -3275,7 +3406,7 @@
         border: none;
         position: absolute;
         bottom: 5px;
-        right: 55px;
+        right: 30px;
     }
     .carousel-content .btn:hover{
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,121,1) 35%, rgba(0,212,255,1) 100%);
@@ -3288,17 +3419,20 @@
         justify-content: space-between; 
         align-items: center;
         margin-bottom: 5%;
-        min-height: 100%;
-        height: auto;
         min-width: 100%;
         text-align: center;
-        margin-left: 25%;
+        height: 100%;
     }
+    .carousel-cards{
+        height: 100%;
+    }
+    .second-carousel item{
 
+    }
     .carousel-title{
         margin-top: 2rem;
         text-align: center;
-        color: #1fc0ba;
+        color:#115278;
     }
     .card{
         border:none;
@@ -3346,7 +3480,7 @@
         background-color: #115278; 
         margin-top:-1.5rem;
         position: absolute;
-        right: 0px;
+        right: 30%;
         
     }
     .card-body a:hover{
@@ -3391,6 +3525,8 @@
         padding: 2rem;
         border-radius: 15%;
         width: 100%;
+        height: 100%;
+        
     }
     
     .reviews h1,.reviews h5, .reviews p{
@@ -3411,7 +3547,20 @@
         padding: 0.5rem;
         border-radius: 0.5vh;
     }
+    .third-cardo{
+        background-color: rgba(31, 192, 186, 0.7);
+        border-radius: 2rem;
+        color:#115278;
+        padding: 2rem;
+        text-align: left;
+        height: 65vh;
+        width: 150vh;
+        position: relative;
+        margin-bottom: 2%;
+        margin-left: 7%;
+    }
     footer {
+        
         font-family: 'Source Sans 3', serif;
         font-size: 0.6rem;
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,82,120,100) 35%, rgba(31,192,186,100) 100%);

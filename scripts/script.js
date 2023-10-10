@@ -311,3 +311,10 @@ document.addEventListener('DOMContentLoaded', function () {
   updateSpecificImage();
   }
 
+  if (currentPageURL.includes("index.html")){
+    if (window.innerWidth < 768){
+      const twobuttons = document.querySelector('.two-buttons');
+      twobuttons.style.display = "inline-flex";
+     
+    }
+  }

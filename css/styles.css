@@ -1941,6 +1941,28 @@
         color:white;
         border-radius: 1rem;
         padding: 0.5rem;
+    }    
+    .two-buttons{
+        margin-top: 2vh;
+        justify-content: space-between; 
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .two-buttons li a{
+        border-color: transparent;
+        text-decoration: none;
+        color:white;
+        border-radius: 10%;
+        min-width: 6rem;
+        background-color:#1fc0ba;
+        margin:0.5vh;
+        margin-top: 0vh;
+    }
+    .twobuttons li a:hover{
+        outline: none;
+        box-shadow: none;
+        border-color: transparent;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,121,1) 35%, rgba(0,212,255,1) 100%);
     }
     .hamburger {
         
@@ -1976,10 +1998,10 @@
     }
     
     .mobile-menu {
-        height: 33vh;
+        height: 35.1vh;
         display: none; 
-        /*background: rgba(31, 192, 186, 0.7) ;*/
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,82,120,100) 35%, rgba(31,192,186,100) 100%);
+        margin-bottom: -2.9vh;
     }
     .mobile-menu ul{
         height: 30vh;
@@ -1987,46 +2009,53 @@
         display: flex;
         list-style-type: none;
         justify-content: space-between; 
-        /*align-items: center;*/
         flex-direction: column;
-        /*background-color: #1fc0ba;*/
         padding:1vh;
+        align-items: stretch; /* Add this line */
         
     }
     .mobile-menu a {
+        border-color: transparent;
         font-size: 2vh;
         font-weight: 400;
-        text-align: justify;
+        text-align: center;
         background-color:#1fc0ba;
         border-radius: 1rem;
         text-decoration: none; 
         color:white; 
         padding: 0.3rem;
+        width: 100%; /* Add this line to set a fixed width */
+        min-width: 5rem; /* Set a fixed minimum width for the buttons */
         
     }
     .mobile-menu a:hover{
+        outline: none;
+        box-shadow: none;
+        border-color: transparent;
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,121,1) 35%, rgba(0,212,255,1) 100%);
         color:white;
         border-radius: 1rem;
     }
     .mobile-menu-ul-1{
         margin-left:0;
+        
     }
     .mobile-menu-ul-2{
        margin-left:-2rem; 
-
+      width: auto;
     }
     .mobile-menu-ul-2 a{
-        width: 4rem;
+        
     }
     .mobile-menu .whatsapp{
+        width: 100%; /* Add this line to set a fixed width */
             text-align: center;
             width: auto;
             display: inline-block;
             padding:0.5;
             color: white; 
             background-color: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
-            border-radius: 1rem;
+           
     }
     header nav{
         display:none;
@@ -2610,6 +2639,27 @@
         border-radius: 1rem;
         padding: 0.5rem;
     }
+    .two-buttons{
+        justify-content: space-between; 
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .two-buttons li a{
+        border-color: transparent;
+        text-decoration: none;
+        color:white;
+        border-radius: 10%;
+        min-width: 6rem;
+        background-color:#1fc0ba;
+        margin:0.5vh;
+        margin-top: 0vh;
+    }
+    .twobuttons li a:hover{
+        outline: none;
+        box-shadow: none;
+        border-color: transparent;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
     .hamburger {
         
         margin-top:-3.5rem;
@@ -2644,10 +2694,10 @@
     }
     
     .mobile-menu {
-        height: 33vh;
+        height: 35.5vh;
         display: none; 
-        /*background: rgba(31, 192, 186, 0.7) ;*/
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,82,120,100) 35%, rgba(31,192,186,100) 100%);
+        margin-bottom: -2.8vh;
     }
     .mobile-menu ul{
         height: 30vh;
@@ -2655,24 +2705,29 @@
         display: flex;
         list-style-type: none;
         justify-content: space-between; 
-        /*align-items: center;*/
         flex-direction: column;
-        /*background-color: #1fc0ba;*/
         padding:1vh;
+        align-items: stretch; /* Add this line */
         
     }
     .mobile-menu a {
+        border-color: transparent;
         font-size: 2vh;
         font-weight: 400;
-        text-align: justify;
+        text-align: center;
         background-color:#1fc0ba;
         border-radius: 1rem;
         text-decoration: none; 
         color:white; 
         padding: 0.3rem;
+        width: 100%; /* Add this line to set a fixed width */
+        min-width: 5rem; /* Set a fixed minimum width for the buttons */
         
     }
     .mobile-menu a:hover{
+        outline: none;
+        box-shadow: none;
+        border-color: transparent;
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,121,1) 35%, rgba(0,212,255,1) 100%);
         color:white;
         border-radius: 1rem;
@@ -2682,12 +2737,13 @@
     }
     .mobile-menu-ul-2{
        margin-left:-2rem; 
-
+      width: auto;
     }
     .mobile-menu-ul-2 a{
-        width: 4rem;
+        
     }
     .mobile-menu .whatsapp{
+        width: 100%; /* Add this line to set a fixed width */
             text-align: center;
             width: auto;
             display: inline-block;
@@ -3279,6 +3335,24 @@
         border-radius: 1rem;
         padding: 0.5rem;
     }
+    .two-buttons{
+        justify-content: space-between; 
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .two-buttons li a{
+        border-color: transparent;
+        text-decoration: none;
+        color:white;
+        border-radius: 10%;
+        min-width: 6rem;
+        background-color:#1fc0ba;
+        margin:0.5vh;
+        margin-top: -6vh;
+    }
+    .twobuttons li:hover{
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
     .hamburger {
         
         margin-top:-3.5rem;
@@ -3313,10 +3387,11 @@
     }
     
     .mobile-menu {
-        height: 63vh;
+        height: 67.8vh;
         display: none; 
         /*background: rgba(31, 192, 186, 0.7) ;*/
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,82,120,100) 35%, rgba(31,192,186,100) 100%);
+        margin-bottom: -7vh;
     }
     .mobile-menu ul{
         height: 50vh;
@@ -3326,20 +3401,25 @@
         justify-content: space-between; 
         flex-direction: column;
         padding:1vh;
+        align-items: stretch; 
         
     }
     .mobile-menu a {
+        border-color: transparent;
         font-size: 4vh;
         font-weight: 400;
-        text-align: justify;
+        text-align: center;
         background-color:#1fc0ba;
         border-radius: 1rem;
         text-decoration: none; 
         color:white; 
         padding: 0.3rem;
+        width: 90%; 
+        min-width: 5rem; 
         
     }
     .mobile-menu a:hover{
+        border-color: transparent;
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,121,1) 35%, rgba(0,212,255,1) 100%);
         color:white;
         border-radius: 1rem;
@@ -3349,19 +3429,20 @@
     }
     .mobile-menu-ul-2{
        margin-left:-2rem; 
-
+       width: auto;
     }
     .mobile-menu-ul-2 a{
-        width: 4rem;
+       
     }
     .mobile-menu .whatsapp{
+            width: 100%; 
             text-align: center;
             width: auto;
             display: inline-block;
             padding:0.5;
             color: white; 
             background-color:linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
-            border-radius: 4vh;
+            
     }
     header nav{
         display:none;

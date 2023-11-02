@@ -211,13 +211,17 @@
     }
     .index-aboutus .carousel-item{
         margin-top: 0%;
-        margin-left: 0%;
+        margin-left: 15%;
         height:45vh;
         width:45vh;
         border-radius: 5%;
+        transition: none;
+        transform:none;
     }
 
     .index-aboutus img{
+        
+        margin-left:0%;
         max-height: 100%;
         width: 100%;
         border-radius: 5%;
@@ -431,7 +435,7 @@
 
     /*SECTION FAQ*/
     .container-faq{
-        height: 95vh;
+        height: 100vh;
     }
     .h2-faq{
         margin-left:12%;
@@ -536,10 +540,15 @@
     }
 
     /* Section AirBnB*/
+    .airbnb-text h2{
+        font-size: 2.5vh;
+    }
     .airbnb-text{
-        font-size: 2.2vh;
-        margin-top: 2%;
+        font-size: 1.7vh;
+        margin-top: 4%;
         color:#115278;
+        background-color:rgba(31, 192, 186, 0.7);
+        border-radius: 2rem;
     }
     .depa1img{
         margin-top:3rem;
@@ -806,6 +815,10 @@
         margin-top: 0%;
         color: #115278;
     }
+    .index-about-us-carousel .carousel-item{
+        transition: none;
+        transform:none;
+    }
     .index-aboutus img{
         max-height: 40vh;
         width: auto;
@@ -842,7 +855,7 @@
         color:#115278;
         padding: 2rem;
         text-align: left;
-        height: 50vh;
+        height: 60vh;
         width: 23vh;
         position: relative;
         margin-bottom: 10%;
@@ -1141,10 +1154,15 @@
     }
 
     /* Section AirBnB*/
+    .airbnb-text h2{
+        font-size: 2vh;
+    }
     .airbnb-text{
         font-size: 1.3vh;
-        margin-top: 2%;
+        margin-top: 4%;
         color:#115278;
+        background-color:rgba(31, 192, 186, 0.7);
+        border-radius: 2rem;
     }
     .depa1img{
         margin-top:2vh;
@@ -1431,6 +1449,10 @@
         margin-top: 0%;
         color: #115278;
     }
+    .index-about-us-carousel .carousel-item{
+        transform: none;
+        transition: none;
+    }
     .index-aboutus .cont-img{
         margin-left: 5%;
         max-width: 25vh;
@@ -1478,7 +1500,7 @@
         color:#115278;
         padding: 2rem;
         text-align: left;
-        height: 54vh;
+        height: 64vh;
         width: 18vh;
         position: relative;
         margin-bottom: 10%;
@@ -1807,10 +1829,15 @@
     }
 
     /* Section AirBnB*/
+    .airbnb-text h2{
+        font-size: 1.8vh;
+    }
     .airbnb-text{
         font-size: 1.3vh;
-        margin-top: 2%;
+        margin-top: 4%;
         color:#115278;
+        background-color:rgba(31, 192, 186, 0.7);
+        border-radius: 2rem;
     }
     .depa1img{
         margin-top:2vh;
@@ -2118,7 +2145,6 @@
         text-align: center;
        
     }
-
     .carousel-title{
         margin-top: 2rem;
         text-align: center;
@@ -2194,12 +2220,20 @@
         margin-top: 0%;
         color: #115278;
     }
+    .index-about-us-carousel .cont-img{
+        transform: none;
+        transition: none;
+    }
+    .index-about-us-carousel .carousel-item{
+        transform: none;
+        transition: none;
+    }
     .index-aboutus .cont-img{
         margin-left: 5%;
         max-width: 25vh;
         max-height: 55vh;
         min-height: 55vh;
-        min-width: 30vh;
+        min-width: 25vh;
         border-radius: 5%;
         margin-top: 5vh;
     }
@@ -2513,10 +2547,15 @@
         }
        
         /* Section AirBnB*/
+        .airbnb-text h2{
+            font-size: 2.5vh;
+        }
         .airbnb-text{
             font-size: 1.8vh;
             margin-top: 10%;
             color:#115278;
+            background-color:rgba(31, 192, 186, 0.7);
+            border-radius: 2rem;
         }
         .depa1img{
             margin-top:4vh;
@@ -2903,6 +2942,11 @@
     .index-about-us-carousel{
         margin-left: 5%;
     }
+    .index-about-us-carousel .carousel-item
+    {
+        transform: none;
+        transition: none;
+    }
     .index-aboutus .cont-img{
         margin-left: 0%;
         max-width: 30vh;
@@ -2956,7 +3000,7 @@
         color:#115278;
         padding: 2rem;
         text-align: left;
-        height: 70vh;
+        height: 80vh;
         width: 40vh;
         position: relative;
         margin-bottom: 10%;
@@ -3220,10 +3264,15 @@
         }
        
         /* Section AirBnB*/
+        .airbnb-text h2{
+            font-size: 2.3vh;
+        }
         .airbnb-text{
             font-size: 1.8vh;
-            margin-top: 10%;
+            margin-top: 15%;
             color:#115278;
+            background-color:rgba(31, 192, 186, 0.7);
+            border-radius: 2rem;
         }
         .depa1img{
             margin-top:4vh;
@@ -3592,6 +3641,13 @@
         min-width: 50vh;
         border-radius: 10%;
         margin-top: 35%;
+        width: 50vh;
+    }
+    .index-about-us-carousel .carousel-item
+    {
+        
+        transform: none;
+        transition: none;
     }
     .index-aboutus img{
         margin-top: 0vh;
@@ -3600,6 +3656,7 @@
         min-height: 90vh;
         min-width: 50vh;
         border-radius: 10%;
+        width: 50vh;
     }
     .reviews{
         background-color: rgba(31, 192, 186, 0.7);
@@ -3614,6 +3671,7 @@
         color: #115278;
     }
     .reviews img{
+        
         border: none;
         margin-top: 5%;
         border-radius: 5%;
@@ -3634,7 +3692,7 @@
         color:#115278;
         padding: 2rem;
         text-align: left;
-        height: 65vh;
+        height: 75vh;
         width: 150vh;
         position: relative;
         margin-bottom: 2%;

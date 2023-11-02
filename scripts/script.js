@@ -23,6 +23,11 @@ if (!hasRedirected) {
   sessionStorage.setItem('hasRedirected', 'true');
 }
 
+if (window.innerWidth < 768){
+  const twobuttons = document.querySelector('.two-buttons');
+  twobuttons.style.display = "inline-flex";
+ 
+}
 
 // JavaScript for toggling the mobile menu
 const hamburger = document.querySelector('.hamburger');
@@ -311,10 +316,11 @@ document.addEventListener('DOMContentLoaded', function () {
   updateSpecificImage();
   }
 
-  if (currentPageURL.includes("index.html")){
-    if (window.innerWidth < 768){
-      const twobuttons = document.querySelector('.two-buttons');
-      twobuttons.style.display = "inline-flex";
-     
-    }
+  function getFlagEmoji(countryCode) {
+    const codePoints = countryCode
+      .toUpperCase()
+      .split('')
+      .map(char =>  127397 + char.charCodeAt());
+    return String.fromCodePoint(...codePoints);
   }
+  
